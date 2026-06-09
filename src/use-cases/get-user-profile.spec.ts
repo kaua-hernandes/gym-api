@@ -30,7 +30,7 @@ describe('get user profile use case', () => {
 
     it('should not be able to get user profile with non-existent user', async () => {
 
-        expect(() => sut.execute({
+        await expect(() => sut.execute({
             userId: 'non-existent-user-id',
         })).rejects.toBeInstanceOf(ResourceNotFoundError);
     });
