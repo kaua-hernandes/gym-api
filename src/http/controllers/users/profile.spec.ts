@@ -1,7 +1,6 @@
 import request from 'supertest';
 import { app } from '@/app';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { email } from 'zod';
 
 describe('profile (e2e)', () => {
     beforeAll(async () => {
